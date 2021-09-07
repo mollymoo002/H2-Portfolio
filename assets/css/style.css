@@ -4,8 +4,11 @@
     --border-bottom: 2px solid black;;
 }
 
+
 * {
+    /* Makes the font family universal on entire page */
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* this allows a smooth scroll effect when clicking on inner page links */
     scroll-behavior: smooth;
 }
 
@@ -14,7 +17,6 @@ body {
 }
 
 header {
-    /*background-color: rgb(83, 189, 154);*/
     background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +45,9 @@ nav li a {
 }
 
 nav li a:hover {
+    /* Adds an effect when you hover over the navigation links, it changes the 
+    background color
+    */
     background: var(--dark-green);
 }
 
@@ -58,6 +63,7 @@ nav li a:hover {
     display: block;
 }
 
+/* This creates a flex box on the section elements wrapped around our main content */
 section {
     display: flex;
     flex-direction: row;
@@ -68,6 +74,7 @@ section h2 {
     margin-right: 20px;
     border-right: 2px solid var(--light);
     padding: 20px;
+    /* this allows the element to be in line with the other section elements */
     flex: 1;
 }
 
@@ -75,11 +82,14 @@ img {
     width: 100%;
 }
 
+
+/* Adds another flex box on the image-block class selector */
 .image-block {
     position: relative;
     display: flex;
   }
 
+/* this allows the p element to be in line with the h2 element */
 section p {
     border: 10px;
     flex: 2;
@@ -87,10 +97,13 @@ section p {
     margin-right: 20px;
 }
 
+/* makes the first project image with the etu class to be larger */
 #etu {
     max-width: 800px;
 }
 
+
+/* allows the text inside the project image to be placed where I need it to be */
 .image-text {
     position: absolute; 
     bottom: 34px; 
@@ -104,6 +117,10 @@ section p {
     min-width: 90px;
   }
 
+
+  /* This class is applied to all other projects beside the first one so they are
+    smaller in comparison
+  */
   .img-text-small {
     max-width: 400px;
     height: auto;
