@@ -6,6 +6,7 @@
 
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +14,10 @@ body {
 }
 
 header {
-    background-color: rgb(83, 189, 154);
+    /*background-color: rgb(83, 189, 154);*/
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -42,6 +46,7 @@ nav li a:hover {
     background: var(--dark-green);
 }
 
+
 #subtitle {
     text-align: right;
     margin-top: 100px;
@@ -49,19 +54,79 @@ nav li a:hover {
     color: var(--light);
 }
 
-.headings {
-    width: 25%;
-    border-right: 2px solid var(--light);
-    padding-left: 70px;
+#projects {
+    display: block;
 }
 
-article {
-    column-count: 2;
-    padding: 8px;
+section {
     display: flex;
     flex-direction: row;
 }
 
-.testing {
-    padding-left: 20px;
+section h2 {
+    text-align: right;
+    margin-right: 20px;
+    border-right: 2px solid var(--light);
+    padding: 20px;
+    flex: 1;
 }
+
+img {
+    width: 100%;
+}
+
+.image-block {
+    position: relative;
+    display: flex;
+  }
+
+section p {
+    border: 10px;
+    flex: 2;
+    margin: auto;
+    margin-right: 20px;
+}
+
+#etu {
+    max-width: 800px;
+}
+
+.image-text {
+    position: absolute; 
+    bottom: 34px; 
+    left: 15px;
+    background: var(--dark-green);
+    color: white; 
+    width: 10%;
+    font-size: 100%;
+    padding: 2%;
+    text-align: center;
+    min-width: 90px;
+  }
+
+  .img-text-small {
+    max-width: 400px;
+    height: auto;
+    border-style: solid;
+    margin: 10px;
+  }
+
+  img-smaller {
+      flex-direction: row;
+  }
+
+  section p a {
+      padding: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .image-block {
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+
+    }
+  }
