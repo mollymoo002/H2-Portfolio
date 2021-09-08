@@ -1,7 +1,7 @@
 :root {
     --light: white;
     --dark-green: rgb(20, 133, 104);
-    --border-bottom: 2px solid black;;
+    --border-bottom: 2px solid white;;
 }
 
 
@@ -67,10 +67,12 @@ nav li a:hover {
 section {
     display: flex;
     flex-direction: row;
+    padding-top: 30px;
+    margin: 0 20px 0 0;
 }
 
 section h2 {
-    text-align: right;
+    text-align: center;
     margin-right: 20px;
     border-right: 2px solid var(--light);
     padding: 20px;
@@ -82,11 +84,11 @@ img {
     width: 100%;
 }
 
-
 /* Adds another flex box on the image-block class selector */
 .image-block {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
   }
 
 /* this allows the p element to be in line with the h2 element */
@@ -136,14 +138,12 @@ section p {
       padding: 20px;
   }
 
-  @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .image-block {
         flex-wrap: wrap;
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
-    nav {
-
-    }
-  }
+@media screen and (max-width: 768px) {
+    
+ }
