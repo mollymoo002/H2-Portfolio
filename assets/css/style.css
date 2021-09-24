@@ -172,6 +172,7 @@ section p {
     #navbar a {
         text-decoration: none;
         border: none;
+        font-size: 25px;
     }
     #title {
         background: var(--main-light);
