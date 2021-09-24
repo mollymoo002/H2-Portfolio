@@ -28,17 +28,21 @@ body {
     display: inline-block;
 }
 
-ul li {
+#navbar {
+    display: flex;
+}
+
+#navbar {
     float: right;
     list-style-type: none;
 }
 
-ul li a {
+#navbar a {
     padding: 20px;
     color: white;
 }
 
-ul li a:hover {
+#navbar a:hover {
     color: black;
     background: white;
     text-decoration: none;
@@ -129,12 +133,18 @@ section p {
       padding: 20px;
   }
 
-@media screen and (max-width: 1024px) {
-    .image-block {
-        flex-wrap: wrap;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    
- }
+@media screen and (max-width: 992px) {
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: var(--dark-green);
+    }
+    #navbar a {
+        text-decoration: none;
+    }
+    #title {
+        background: var(--dark-green);
+    }
+  }
