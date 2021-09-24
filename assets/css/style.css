@@ -7,12 +7,17 @@
 
 
 * {
-    /* Makes the font family universal on entire page */
-    font-family: Georgia, 'Times New Roman', Times, serif;
     /* this allows a smooth scroll effect when clicking on inner page links */
     scroll-behavior: smooth;
 }
 
+main {
+    font-family: 'Koh Santepheap', cursive;
+}
+
+header {
+    font-family: 'Lora', serif;
+}
 
 #title {
     color: var(--light);
